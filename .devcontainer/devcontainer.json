@@ -1,0 +1,55 @@
+{
+    "name": "Advent Of Code Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "forwardPorts": [8888],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-toolsai.jupyter",
+                "1yib.rust-bundle",
+                "anaganisk.theme-onedark-plus",
+                "bradlc.vscode-tailwindcss",
+                "bungcip.better-toml",
+                "coenraads.bracket-pair-colorizer-2",
+                "dbaeumer.vscode-eslint",
+                "divyanshuagrawal.competitive-programming-helper",
+                "dustypomerleau.rust-syntax",
+                "esbenp.prettier-vscode",
+                "evgeniypeshkov.syntax-highlighter",
+                "github.copilot",
+                "github.remotehub",
+                "iamhyc.overleaf-workshop",
+                "ionide.ionide-fsharp",
+                "james-yu.latex-workshop",
+                "mathematic.vscode-latex",
+                "mechatroner.rainbow-csv",
+                "ms-azuretools.vscode-docker",
+                "ms-dotnettools.csharp",
+                "ms-python.python",
+                "ms-toolsai.datawrangler",
+                "ms-toolsai.jupyter-keymap",
+                "ms-toolsai.jupyter-renderers",
+                "ms-vscode-remote.remote-containers",
+                "ms-vscode-remote.remote-wsl",
+                "ms-vscode.cmake-tools",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.makefile-tools",
+                "nickfode.latex-formatter",
+                "rust-lang.rust-analyzer",
+                "syler.sass-indented",
+                "vadimcn.vscode-lldb",
+                "zhwu95.riscv",
+                "yzhang.markdown-all-in-one",
+                "bierner.markdown-preview-github-styles",
+                "haskell.haskell"
+            ]
+        }
+    },
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "editor.tabSize": 4
+    }
+}
