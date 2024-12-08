@@ -44,7 +44,7 @@ isWithinRange x y =
    in 1 <= diff && diff <= 3
 
 isStrictlyOrdered :: (Ord a, Num a) => [a] -> Bool
-isStrictlyOrdered xs = isStrictlyIncreasing xs || isStrictlyDecdspodasreasing xs
+isStrictlyOrdered xs = isStrictlyIncreasing xs || isStrictlyDecreasing xs
 
 -- iteravely go through each level start by removing level 1 try to remove it and check if isSafe
 -- and that also counts, and go to level 2, etc...
