@@ -12,7 +12,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Install GHCup (Haskell Toolchain Manager), GHC, and Cabal
+# Install GHCup (Haskell Toolchain Manager), GHC (specific version), and Cabal
 RUN curl -sSL https://get-ghcup.haskell.org | bash -s -- --non-interactive && \
     /root/.ghcup/bin/ghcup install ghc latest && \
     /root/.ghcup/bin/ghcup install cabal latest && \
@@ -22,5 +22,8 @@ RUN curl -sSL https://get-ghcup.haskell.org | bash -s -- --non-interactive && \
 # Set PATH to include GHCup binaries explicitly
 ENV PATH="/root/.ghcup/bin:$PATH"
 
-# Cleanup
+# Install ormolu
+RUN cabal install ormolu
+
+# Cleanup temporary files
 RUN rm -rf /tmp/*
