@@ -46,8 +46,6 @@ isWithinRange x y =
 isStrictlyOrdered :: (Ord a, Num a) => [a] -> Bool
 isStrictlyOrdered xs = isStrictlyIncreasing xs || isStrictlyDecreasing xs
 
--- iteravely go through each level start by removing level 1 try to remove it and check if isSafe
--- and that also counts, and go to level 2, etc...
 leaveOneOut :: [a] -> [[a]]
 leaveOneOut xs = [take i xs ++ drop (i + 1) xs | i <- [0 .. length xs - 1]]
 
