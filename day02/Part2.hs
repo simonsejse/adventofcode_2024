@@ -1,23 +1,5 @@
 module Part2 where
 
--- parseInputs :: String -> [[String]]
--- parseInputs inputs =
---   let r = lines inputs
---       l = map words r
---    in l
-
--- parseInputs :: String -> [[String]]
--- parseInputs inputs =
---   let r = lines inputs
---       l = map (\x -> words (x)) r
---    in l
-
--- parseInputs :: String -> [[Int]]
--- parseInputs inputs =
---   let r = lines inputs
---       l = map (\x -> map read (words (x))) r
---    in l
-
 parseInputs :: String -> [[Int]]
 parseInputs inputs =
   let r = lines inputs
